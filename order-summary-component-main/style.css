@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --color-blue:hsl(225, 100%, 94%);
+    --color-Brightblue: hsl(245, 75%, 52%);
+    --color-veryPaleBlue:hsl(225, 100%, 98%);
+    --color-desaturedBlue:hsl(224, 23%, 55%);
+    --color-darkBlue:hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--color-blue);
+    background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container{
+     height: 100vh;
+     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.card__container{
+    width: 330px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+    background-color: #f6f6f6;
+    border-radius: 0 0 1em 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+-moz-box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+}
+
+
+.imagem__container img{
+    width: 100%;
+    border-radius: 1em 1em  0 0;
+}
+
+.informacoes__card{
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.titulo__card{
+    padding-bottom: 1em;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--color-darkBlue);
+}
+
+.descricao__card{
+    color: var(--color-desaturedBlue);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.plano__card{
+    display: flex;
+    background-color: var(--color-veryPaleBlue);
+    gap: 2.5em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    height: 70px;
+    width: 300px;
+    border-radius: 0.6em;
+}
+
+.tipo__plano{
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--color-darkBlue);
+    margin-right: 2em;
+}
+
+.valor__plano{
+    color: var(--color-desaturedBlue);
+    font-size: 13px;
+}
+.link__plano{
+font-size: 14px;
+font-weight: 700;
+}
+
+.descricao__plano__card{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9em;
+}
+
+.pagamento__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-Brightblue);
+    width: 280px;
+    font-size: 14px;
+    height: 50px;
+    color: #f6f6f6;
+    text-decoration: none;
+    border-radius: 0.7em;
+    font-weight: 700;
+    -webkit-box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+-moz-box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+box-shadow: 4px 13px 9px -4px rgba(122,117,122,1);
+}
+
+.ordem__cancelamento__card{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--color-desaturedBlue);
+}
+
+
